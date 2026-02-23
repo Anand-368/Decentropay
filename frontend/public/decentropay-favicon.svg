@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E0AAFF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="f" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="0.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Hexagon outline (blockchain motif) -->
+  <polygon points="16,2 25.86,7.5 25.86,18.5 16,24 6.14,18.5 6.14,7.5"
+           fill="none" stroke="#C084FC" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- D shape -->
+  <path d="M9 7 L9 23 L16.5 23 C22 23 26 20 26 15 C26 10 22 7 16.5 7 Z
+           M12.5 10 L16 10 C20 10 22.2 12 22.2 15 C22.2 18 20 20 16 20 L12.5 20 Z"
+        fill="url(#accent)" filter="url(#f)"/>
+
+  <!-- Glow overlay -->
+  <path d="M9 7 L9 23 L16.5 23 C22 23 26 20 26 15 C26 10 22 7 16.5 7 Z
+           M12.5 10 L16 10 C20 10 22.2 12 22.2 15 C22.2 18 20 20 16 20 L12.5 20 Z"
+        fill="url(#glow)"/>
+
+  <!-- Node dots -->
+  <circle cx="16" cy="2" r="1.2" fill="#E0AAFF" opacity="0.7"/>
+  <circle cx="25.86" cy="7.5" r="1" fill="#C084FC" opacity="0.5"/>
+  <circle cx="25.86" cy="18.5" r="1" fill="#C084FC" opacity="0.5"/>
+  <circle cx="16" cy="24" r="1.2" fill="#E0AAFF" opacity="0.7"/>
+  <circle cx="6.14" cy="18.5" r="1" fill="#C084FC" opacity="0.5"/>
+  <circle cx="6.14" cy="7.5" r="1" fill="#C084FC" opacity="0.5"/>
+</svg>
