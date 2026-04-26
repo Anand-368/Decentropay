@@ -1,3 +1,8 @@
+## 🚀 Live Demo
+
+[![Live App](https://img.shields.io/badge/Live-App-green?style=for-the-badge)](https://decentropay.vercel.app)
+
+
 \# DecentroPay 🚀
 
 Decentralized QR-based crypto payment app built on blockchain.
